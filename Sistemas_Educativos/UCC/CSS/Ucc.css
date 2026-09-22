@@ -179,6 +179,9 @@ img{
     }
 }
 @media screen and (max-width: 980px){
+    .navbar{
+        max-width: 8000px;
+    }
     #contenedor{
         width: 90%;
     }
