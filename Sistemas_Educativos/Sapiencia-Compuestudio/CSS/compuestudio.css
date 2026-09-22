@@ -84,6 +84,8 @@
     #menu-toggle:checked + .hamburger + .menu-horizontal_pequeno{
         display:flex;
     }
+    .Contenedor{
+        width: 900px
     /*Horarios*/
     .T{
         font-size: 10px;
