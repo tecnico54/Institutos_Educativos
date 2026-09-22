@@ -1,0 +1,39 @@
+.Fondo{
+    width:85%;
+    max-width:1100px;
+    margin:40px auto;
+    background:rgba(30,120,220,0.50);
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    color:white;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed
+}
+.Clases{
+    font-size:52px;
+    color:white;
+}
+/*Tarjeta del horario*/
+#horarioHoy{
+    margin:35px auto;
+    width:60%;
+    min-width:300px;
+    background:white;
+    color:#222;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+/*Materia*/
+.materia{
+    font-size:28px;
+    color:#1565C0;
+    font-weight:bold;
+    margin-bottom:12px;
+}

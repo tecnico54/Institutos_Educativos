@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+    margin: 75px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.Sistemas_Educativos{
+    margin: 0 auto;
+    padding: 45px;
+    border-spacing: 15px;
+}
+.Sistemas_Educativos-Cards{
+    padding: 20px;
+    width: 80px;
+    height: 300px;
+    border: 1px #000 inset;
+}
+.Sistemas_Educativos-link{
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+.IMG{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width: 890px){
+    .Sistemas_Educativos-Cards{
+        display: inline-block;
+    }
+}
