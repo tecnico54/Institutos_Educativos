@@ -29,34 +29,34 @@ const materias = {
         ]
     },
     DSoftware: {
-    nombre: "Diseño de Solucione de Software",
-    unidades: [
-        {
-            unidad: 1,
-            desempenos: [
-                {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                {nombre: "Producto", porcentaje: 11, nota: 0}
-            ]
-        },
-        {
-            unidad: 2,
-            desempenos: [
-                {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                {nombre: "Producto", porcentaje: 11, nota: 0}
-            ]
-        },
-        {
-            unidad: 3,
-            desempenos: [
-                {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                {nombre: "Producto", porcentaje: 11, nota: 0}
-            ]
-        }
-    ]
-},
+        nombre: "Diseño de Soluciones de Software",
+        unidades: [
+            {
+                unidad: 1,
+                desempenos: [
+                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
+                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
+                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                ]
+            },
+            {
+                unidad: 2,
+                desempenos: [
+                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
+                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
+                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                ]
+            },
+            {
+                unidad: 3,
+                desempenos: [
+                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
+                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
+                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                ]
+            }
+        ]
+    },
     IDatos: {
         nombre: "Integración de Datos",
         unidades: [
@@ -145,7 +145,7 @@ const materias = {
         ]
     },
     TI: {
-        nombre: "Informatica",
+        nombre: "Informática",
         unidades: [
             {
                 unidad: 1,
@@ -203,68 +203,162 @@ const materias = {
         ]
     }
 };
-
-
-//Elementos de HTML
+//==========================================
+//ELEMENTOS DE HTML
+//==========================================
 const selectorMateria = document.getElementById("materia");
 const tablaNotas = document.getElementById("tablaNotas");
 const promedioMateria = document.getElementById("promedioMateria");
 const tablaCompleta = document.getElementById("tablaCompleta");
-//Detectar cuando se selecciona una materia
-selectorMateria.addEventListener("change", function(){
-    const materiaSeleccionada = selectorMateria.value;
-    //Limpiar la tabla
-    tablaNotas.innerHTML = "";
-    //Limpiar el promedio
-    promedioMateria.textContent = "-";
-    //Si no se seleccionó ninguna materia
-    if(materiaSeleccionada === ""){
-        tablaCompleta.style.display = "none";
-        return;
+//==========================================
+//MOSTRAR UNA FILA EN LA TABLA
+//==========================================
+function crearFila(materia, unidad, desempeno){
+    const fila = document.createElement("tr");
+    //Materia
+    const celdaMateria = document.createElement("td");
+    celdaMateria.textContent = materia.nombre;
+    //Unidad
+    const celdaUnidad = document.createElement("td");
+    celdaUnidad.textContent = unidad.unidad;
+    //Desempeño
+    const celdaDesempeno = document.createElement("td");
+    celdaDesempeno.textContent = desempeno.nombre;
+    //Porcentaje
+    const celdaPorcentaje = document.createElement("td");
+    celdaPorcentaje.textContent = desempeno.porcentaje + "%";
+    //Nota
+    const celdaNota = document.createElement("td");
+    if (desempeno.nota === 0){
+        celdaNota.textContent = "Pendiente";
+    }else{
+        celdaNota.textContent = desempeno.nota.toFixed(1);
     }
-    //Mostrar la tabla
-    tablaCompleta.style.display = "table";
-    //Buscar la materia
-    const materia = materias[materiaSeleccionada];
-    //Variable para calcular el promedio
+    //Agregar celdas
+    fila.appendChild(celdaMateria);
+    fila.appendChild(celdaUnidad);
+    fila.appendChild(celdaDesempeno);
+    fila.appendChild(celdaPorcentaje);
+    fila.appendChild(celdaNota);
+    return fila;
+}
+//==========================================
+//CALCULAR PROMEDIO DE UNA MATERIA
+//==========================================
+function calcularPromedioMateria(materia){
     let sumaNotas = 0;
     let cantidadNotas = 0;
-    //Recorrer las unidades
     materia.unidades.forEach(function(unidad){
-        //Recorrer los desempeños
         unidad.desempenos.forEach(function(desempeno){
-            //Crear una fila
-            const fila = document.createElement("tr");
-            //Materia
-            const celdaMateria = document.createElement("td");
-            celdaMateria.textContent = materia.nombre;
-            //Unidad
-            const celdaUnidad = document.createElement("td");
-            celdaUnidad.textContent = unidad.unidad;
-            //Desempeño
-            const celdaDesempeno = document.createElement("td");
-            celdaDesempeno.textContent = desempeno.nombre;
-            //Porcentaje
-            const celdaPorcentaje = document.createElement("td");
-            celdaPorcentaje.textContent = desempeno.porcentaje + "%";
-            //Nota
-            const celdaNota = document.createElement("td");
-            celdaNota.textContent = desempeno.nota.toFixed(1);
-            //Agregar las celdas a la fila
-            fila.appendChild(celdaMateria);
-            fila.appendChild(celdaUnidad);
-            fila.appendChild(celdaDesempeno);
-            fila.appendChild(celdaPorcentaje);
-            fila.appendChild(celdaNota);
-            //Agregar la fila a la tabla
-            tablaNotas.appendChild(fila);
-            //Acumular la nota
-            sumaNotas += desempeno.nota;
-            cantidadNotas++;
+            //Los 0 representan notas pendientes
+            if (desempeno.nota > 0) {
+                sumaNotas += desempeno.nota;
+                cantidadNotas++;
+            }
         });
+
     });
-    //Calcular promedio
-    const promedio = sumaNotas / cantidadNotas;
-    //Mostrar promedio
-    promedioMateria.textContent = promedio.toFixed(1);
+    if (cantidadNotas === 0) {
+        return null;
+    }
+    return sumaNotas / cantidadNotas;
+}
+//==========================================
+//CALCULAR PROMEDIO GENERAL
+//==========================================
+function calcularPromedioGeneral() {
+    let sumaNotas = 0;
+    let cantidadNotas = 0;
+    Object.values(materias).forEach(function(materia) {
+        materia.unidades.forEach(function(unidad) {
+            unidad.desempenos.forEach(function(desempeno) {
+                if (desempeno.nota > 0) {
+                    sumaNotas += desempeno.nota;
+                    cantidadNotas++;
+                }
+
+            });
+
+        });
+
+    });
+    if (cantidadNotas === 0){
+        return null;
+    }
+    return sumaNotas / cantidadNotas;
+}
+//==========================================
+//MOSTRAR TODAS LAS MATERIAS
+//==========================================
+function mostrarTodasLasMaterias() {
+    tablaNotas.innerHTML = "";
+    Object.values(materias).forEach(function(materia){
+
+        materia.unidades.forEach(function(unidad){
+
+            unidad.desempenos.forEach(function(desempeno){
+                const fila = crearFila(
+                    materia,
+                    unidad,
+                    desempeno
+                );
+                tablaNotas.appendChild(fila);
+
+            });
+
+        });
+
+    });
+    const promedio = calcularPromedioGeneral();
+    if (promedio === null){
+        promedioMateria.textContent = "-";
+    }else{
+        promedioMateria.textContent = promedio.toFixed(1);
+    }
+    tablaCompleta.style.display = "table";
+}
+//==========================================
+//MOSTRAR UNA SOLA MATERIA
+//==========================================
+function mostrarMateria(materiaSeleccionada) {
+    tablaNotas.innerHTML = "";
+    const materia = materias[materiaSeleccionada];
+    materia.unidades.forEach(function(unidad) {
+        unidad.desempenos.forEach(function(desempeno) {
+            const fila = crearFila(
+                materia,
+                unidad,
+                desempeno
+            );
+            tablaNotas.appendChild(fila);
+        });
+
+    });
+    const promedio = calcularPromedioMateria(materia);
+    if (promedio === null){
+        promedioMateria.textContent = "-";
+    }else{
+        promedioMateria.textContent = promedio.toFixed(1);
+    }
+    tablaCompleta.style.display = "table";
+}
+//==========================================
+//DETECTAR CAMBIO EN EL SELECTOR
+//==========================================
+selectorMateria.addEventListener("change", function() {
+    const materiaSeleccionada = selectorMateria.value;
+    //Si no seleccionó una materia:
+    //mostramos nuevamente todas
+    if (materiaSeleccionada === "") {
+        mostrarTodasLasMaterias();
+        return;
+    }
+    //Si seleccionó una materia:
+    mostrarMateria(materiaSeleccionada);
 });
+// ==========================================
+//CARGAR LA PÁGINA
+// ==========================================
+//Al abrir la página mostramos
+//todas las materias automáticamente.
+mostrarTodasLasMaterias();
