@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/notas.css">
+        <title>Mis notas</title>
+    </head>
+    <body>
+        <div class="contenedorNotas">
+            <h1>Mis notas</h1>
+            <label for="materia">Seleccione una materia:</label>
+            <select id="materia">
+                <option value="">Seleccione una materia</option>
+                <option value="CLenguaje">Comunicación y Lenguaje
+                </option>
+                <option value="DSoftware">Diseño de Soluciones de Software</option>
+                <option value="IDatos">Integración de Datos</option>
+                <option value="DApps">Diseño de Apps</option>
+                <option value="Ingles">Inglés</option>
+                <option value="TI">Informatica</option>
+                <option value="BD">Registro y Consolidación de datos</option>
+            </select>
+            <div class="promedio">
+                <h2>Promedio actual</h2>
+                <p id="promedioMateria">-</p>
+        </div>
+        <table class="MisNotas" id="tablaCompleta">
+            <thead>
+                <th class="MisNotas_active">Materia</th>               
+                <th class="MisNotas_active">Unidad</th>
+                <th class="MisNotas_active">Desempeño</th>
+                <th class="MisNotas_active">Porsentaje</th>
+                <th class="MisNotas_active">Nota</th>
+            </thead>
+            <tbody id="tablaNotas"></tbody>
+        </table>
+    </body>
+    <script src="../JavaScript/notas.js"></script>
+</html>
