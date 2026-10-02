@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.contenedorNotas{
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+.contenedorNotas h1{
+    margin-bottom: 30px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+select{
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.promedio{
+    margin-bottom: 30px;
+}
+.promedio h2{
+    margin-bottom: 10px;
+}
+#promedioMateria{
+    font-size: 30px;
+    font-weight: bold;
+}
+#tablaCompleta{
+    display: none;
+}
+.MisNotas{
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+.MisNotas_active{
+    padding: 10px 20px;
+    border: 2px inset #000;
+}
+.MisNotas td{
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
