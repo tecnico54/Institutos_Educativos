@@ -15,6 +15,12 @@
     background-position:center;
     background-attachment:fixed
 }
+.Menu{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-left: 5px;
+}
 .Clases{
     font-size:52px;
     color:white;
