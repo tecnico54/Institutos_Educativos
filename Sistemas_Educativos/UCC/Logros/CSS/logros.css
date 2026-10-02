@@ -1,1 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #111;
+}
+.Menu{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.contenedor{
+    width: 94%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+h1{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.subtitulo{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+.selector{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.selector label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.selector select{
+    min-width: 260px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background: white;
+}
+.tituloVista{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+}
+.resumen{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.tarjeta{
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 18px;
+    text-align: center;
+}
+.tarjeta span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.tarjeta strong{
+    font-size: 28px;
+}
+.leyenda{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
 
+.color{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #777;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.azul{
+    background: #12a8dc;
+}
+.verde{
+    background: #00b050;
+}
+.verdeOscuro{
+    background: #217346;
+}
+.pendiente{
+    background: white;
+}
+
+.tablaContenedor{
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #999;
+}
+.tablaMaterias{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tablaMaterias th,
+.tablaMaterias td{
+    border: 1px solid #777;
+    padding: 12px;
+}
+
+.tablaMaterias th{
+    background: #d9e8f5;
+    text-align: left;
+}
+
+.tablaMaterias td:nth-child(1),
+.tablaMaterias td:nth-child(3){
+    text-align: center;
+}
+.notaAzul {
+    background: #12a8dc;
+    font-weight: bold;
+}
+.notaVerde{
+    background: #00b050;
+    font-weight: bold;
+}
+.notaVerdeOscuro{
+    background: #217346;
+    color: white;
+    font-weight: bold;
+}
+.notaPendiente{
+    background: white;
+    color: #555;
+}
+.mensaje{
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+}
+@media (max-width: 750px){
+    .resumen{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedor{
+        width: 96%;
+        margin: 25px auto;
+    }
+    .tablaMaterias th,
+    .tablaMaterias td{
+        padding: 9px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 450px){
+    .resumen{
+        grid-template-columns: 1fr;
+    }
+    .selector select{
+        width: 100%;
+        min-width: 0;
+    }
+}
