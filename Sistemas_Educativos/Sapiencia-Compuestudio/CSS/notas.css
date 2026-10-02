@@ -6,6 +6,12 @@
 body{
     font-family: Arial, sans-serif;
 }
+.Menu{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-left: 5px;
+}
 .contenedorNotas{
     width: 90%;
     max-width: 1000px;
