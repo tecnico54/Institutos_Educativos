@@ -4,7 +4,6 @@ function mostrarHorarioHoy(){
     const dia = hoy.getDate();
     const contenedor = document.getElementById("horarioHoy");
     //======== FECHAS DEL AÑO ACADÉMICO========
-    //Primer semestre
     const inicioSemestre = { mes: 9, dia: 2 };
     const finSemestre = { mes: 10, dia: 31 };
     //=========================================
