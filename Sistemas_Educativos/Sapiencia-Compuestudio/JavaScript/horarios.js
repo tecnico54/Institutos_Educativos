@@ -3,7 +3,7 @@ const materias = [
         nombre: "Comunicación de lenguaje",
         dia: "Lunes",
         hora: "8:00 - 9:45",
-        salon: ""
+        salon: "300"
     },
     {
         nombre: "Diseño de Soluciones",
