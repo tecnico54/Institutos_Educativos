@@ -3,11 +3,11 @@ function mostrarHorarioHoy(){
     const mes = hoy.getMonth()
     const dia = hoy.getDate();
     const contenedor = document.getElementById("horarioHoy");
-    // ======== FECHAS DEL AÑO ACADÉMICO ========
-    // Primer semestre
+    //======== FECHAS DEL AÑO ACADÉMICO========
+    //Primer semestre
     const inicioSemestre = { mes: 9, dia: 2 };
-    const finSemestre1    = { mes: 10, dia: 31 };
-    // =========================================
+    const finSemestre = { mes: 10, dia: 31 };
+    //=========================================
     function dentroDelRango(inicio, fin){
         if(mes < inicio.mes || mes > fin.mes){
             return false;
@@ -21,7 +21,7 @@ function mostrarHorarioHoy(){
         return true;
     }
     const enClases =
-        dentroDelRango(inicioSemestre, finSemestre1);
+        dentroDelRango(inicioSemestre, finSemestre);
     if(!enClases){
         contenedor.innerHTML = `
             <p><b>Terminastes tus estudio, preparate para trabajar 😄.</b></p>
