@@ -44,17 +44,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-/*Fecha y Hora*/
-#fecha{
-  font-size: 30px;
-  text-align: left;
-  color: white;
-}
-#reloj{
-  font-size: 30px;
-  color: white;
-  text-align: left;
-}
 /*Menú*/
 .navbar{
     max-width: 9000px;
@@ -145,13 +134,6 @@ img{
     background:black;
 }
 @media screen and (max-width: 1168px){
-    /*Hora&Fecha*/
-    #fecha{
-        font-size: 50px;
-    }
-    #reloj{
-        font-size: 50px;
-    }
     /*Menú*/
     .navbar{
         flex-direction:column;
