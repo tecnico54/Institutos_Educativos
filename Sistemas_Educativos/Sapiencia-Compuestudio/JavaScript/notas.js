@@ -7,14 +7,14 @@ const materias = {
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 11, nota: 5.0},
                     {nombre: "Desempeño", porcentaje: 11, nota: 5.0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Producto", porcentaje: 11, nota: 4.0}
                 ]
             },
             {
                 unidad: 2,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
+                    {nombre: "Conocimiento", porcentaje: 11, nota: 4.0},
+                    {nombre: "Desempeño", porcentaje: 11, nota: 4.0},
                     {nombre: "Producto", porcentaje: 11, nota: 0}
                 ]
             },
@@ -94,7 +94,7 @@ const materias = {
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 11, nota: 5.0},
                     {nombre: "Desempeño", porcentaje: 11, nota: 5.0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Producto", porcentaje: 11, nota: 4.0}
                 ]
             },
             {
