@@ -9,13 +9,13 @@ const materias = [
         nombre: "Diseño de Soluciones",
         dia: "Lunes",
         hora: "10:15 - 12:00",
-        salon: "207"
+        salon: "208"
     },
     {
         nombre: "Diseño de Soluciones",
         dia: "Martes",
         hora: "8:00 - 9:45",
-        salon: "207"
+        salon: "208"
     },
     {
         nombre: "Integración de Datos",
@@ -27,13 +27,13 @@ const materias = [
         nombre: "Diseño de apps",
         dia: "Miércoles",
         hora: "8:00 - 9:45",
-        salon: "207"
+        salon: "208"
     },
     {
         nombre: "Diseño de apps",
         dia: "Miércoles",
         hora: "10:15 - 12:00",
-        salon: "207"
+        salon: "208"
     },
     {
         nombre: "Inglés",
@@ -45,18 +45,18 @@ const materias = [
         nombre: "Informatica",
         dia: "Jueves",
         hora: "10:15 - 12:00",
-        salon: "207"
+        salon: "208"
     },
     {
         nombre: "Registro y Consolidación de datos",
         dia: "Viernes",
         hora: "8:00 - 9:45",
-        salon: "207"
+        salon: "208"
     },
     {
         nombre: "Registro y Consolidación de datos",
         dia: "Viernes",
         hora: "10:15 - 12:00",
-        salon: "207"
+        salon: "208"
     }
 ];
