@@ -45,7 +45,7 @@ const materias = [
         nombre: "Informatica",
         dia: "Jueves",
         hora: "10:15 - 12:00",
-        salon: "208"
+        salon: "205"
     },
     {
         nombre: "Registro y Consolidación de datos",
