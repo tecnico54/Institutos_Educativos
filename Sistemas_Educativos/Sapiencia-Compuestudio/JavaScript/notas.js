@@ -150,15 +150,15 @@ const materias = {
             {
                 unidad: 1,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Conocimiento", porcentaje: 11, nota: 4.5},
+                    {nombre: "Desempeño", porcentaje: 11, nota: 4.5},
+                    {nombre: "Producto", porcentaje: 11, nota: 4.5}
                 ]
             },
             {
                 unidad: 2,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
+                    {nombre: "Conocimiento", porcentaje: 11, nota: 4.5},
                     {nombre: "Desempeño", porcentaje: 11, nota: 0},
                     {nombre: "Producto", porcentaje: 11, nota: 0}
                 ]
