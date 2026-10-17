@@ -23,7 +23,7 @@ const materias = {
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 11, nota: 0},
                     {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Producto", porcentaje: 12, nota: 0}
                 ]
             }
         ]
@@ -52,7 +52,7 @@ const materias = {
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 11, nota: 0},
                     {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Producto", porcentaje: 12, nota: 0}
                 ]
             }
         ]
@@ -63,25 +63,33 @@ const materias = {
             {
                 unidad: 1,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 4.0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 5.0}
+                    {nombre: "Conocimiento", porcentaje: 8, nota: 4.0},
+                    {nombre: "Desempeño", porcentaje: 8, nota: 0},
+                    {nombre: "Producto", porcentaje: 8, nota: 5.0}
                 ]
             },
             {
                 unidad: 2,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Conocimiento", porcentaje: 8, nota: 0},
+                    {nombre: "Desempeño", porcentaje: 8, nota: 0},
+                    {nombre: "Producto", porcentaje: 8, nota: 0}
                 ]
             },
             {
                 unidad: 3,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Conocimiento", porcentaje: 8, nota: 0},
+                    {nombre: "Desempeño", porcentaje: 8, nota: 0},
+                    {nombre: "Producto", porcentaje: 9, nota: 0}
+                ]
+            },
+            {
+                unidad: 4,
+                desempenos: [
+                    {nombre: "Conocimiento", porcentaje: 9, nota: 0},
+                    {nombre: "Desempeño", porcentaje: 9, nota: 0},
+                    {nombre: "Producto", porcentaje: 9, nota: 0}
                 ]
             }
         ]
@@ -92,25 +100,22 @@ const materias = {
             {
                 unidad: 1,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 5.0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 5.0},
-                    {nombre: "Producto", porcentaje: 11, nota: 4.0}
+                    {nombre: "Conocimiento", porcentaje: 16, nota: 5.0},
+                    {nombre: "Desempeño", porcentaje: 16, nota: 5.0},
+                    {nombre: "Producto", porcentaje: 17, nota: 4.0}
                 ]
             },
             {
                 unidad: 2,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 5.0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Conocimiento", porcentaje: 17, nota: 5.0},
+                    {nombre: "Desempeño", porcentaje: 17, nota: 0},
                 ]
             },
             {
                 unidad: 3,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Producto", porcentaje: 17, nota: 0}
                 ]
             }
         ]
@@ -139,7 +144,7 @@ const materias = {
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 11, nota: 5.0},
                     {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Producto", porcentaje: 12, nota: 0}
                 ]
             }
         ]
@@ -168,7 +173,7 @@ const materias = {
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 11, nota: 0},
                     {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Producto", porcentaje: 12, nota: 0}
                 ]
             }
         ]
@@ -179,25 +184,17 @@ const materias = {
             {
                 unidad: 1,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 4.0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 4.0},
-                    {nombre: "Producto", porcentaje: 11, nota: 3.5}
+                    {nombre: "Conocimiento", porcentaje: 16, nota: 4.0},
+                    {nombre: "Desempeño", porcentaje: 16, nota: 4.0},
+                    {nombre: "Producto", porcentaje: 17, nota: 3.5}
                 ]
             },
             {
                 unidad: 2,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
-                ]
-            },
-            {
-                unidad: 3,
-                desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Conocimiento", porcentaje: 17, nota: 0},
+                    {nombre: "Desempeño", porcentaje: 17, nota: 0},
+                    {nombre: "Producto", porcentaje: 17, nota: 0}
                 ]
             }
         ]
