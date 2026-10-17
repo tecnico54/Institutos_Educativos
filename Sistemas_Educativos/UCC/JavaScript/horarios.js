@@ -8,14 +8,6 @@ const materias = [
     salon: "605"
 },
 {
-    nombre: "Calculo Integrar",
-    dia: "Martes",
-    semestre: "2",
-    hora: "14:00 - 17:00",
-    bloque: "2",
-    salon: "Sala 1 - 5"
-},
-{
     nombre: "Seguridad Informatica",
     dia: "Martes",
     semestre: "8",
@@ -37,6 +29,6 @@ const materias = [
     semestre: "7",
     hora: "6:00 - 8:00",
     bloque: "1",
-    salon: "705"
+    salon: "605/606"
 }
 ];
