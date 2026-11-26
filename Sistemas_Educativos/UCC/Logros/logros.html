@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/logros.css">
+        <link rel="shorcut icon" href="Trofeo.png">
+        <title>Logros Académicos</title>
+    </head>
+    <body>
+        <a class="Menu" href="../Ucc.html"><-- Regresar</a>
+        <main class="contenedor">
+            <h1>Logros Académicos</h1>
+            <p class="subtitulo">Universidad Cooperativa de Colombia</p>
+            <section class="selector">
+                <label for="selectorSemestre">Seleccione un semestre:</label>
+                <select id="selectorSemestre">
+                    <option value="todos">Todos los semestres</option>
+                    <option value="1">Primer semestre</option>
+                    <option value="2">Segundo semestre</option>
+                    <option value="3">Tercer semestre</option>
+                    <option value="4">Cuarto semestre</option>
+                    <option value="5">Quinto semestre</option>
+                    <option value="6">Sexto semestre</option>
+                    <option value="7">Séptimo semestre</option>
+                    <option value="8">Octavo semestre</option>
+                </select>
+            </section>
+            <h2 id="tituloVista" class="tituloVista">Todos los semestres</h2>
+            <section class="resumen">
+                <div class="tarjeta">
+                    <span>Materias con nota</span>
+                    <strong id="materiasAprobadas">-</strong>
+                </div>
+                <div class="tarjeta">
+                    <span>Materias sin hacer</span>
+                    <strong id="materiasPendientes">-</strong>
+                </div>
+                <div class="tarjeta">
+                    <span>Promedio</span>
+                    <strong id="promedioGeneral">-</strong>
+                </div>
+                <div class="tarjeta">
+                    <span>Total de materias</span>
+                    <strong id="totalMaterias">-</strong>
+                </div>
+            </section>
+            <section class="leyenda">
+                <span><i class="color azul"></i> 3,0 - 3,9</span>
+                <span><i class="color verde"></i> 4,0 - 4,9</span>
+                <span><i class="color verdeOscuro"></i> 5,0</span>
+                <span><i class="color pendiente"></i> Sin nota</span>
+            </section>
+            <section class="tablaContenedor">
+                <table class="tablaMaterias">
+                    <thead>
+                        <tr>
+                            <th>Semestre</th>
+                            <th>Materia</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaMaterias"></tbody>
+                </table>
+            </section>
+            <p id="mensaje" class="mensaje"></p>
+
+        </main>
+        <script src="JavaScript/logros.js"></script>
+    </body>
+</html>

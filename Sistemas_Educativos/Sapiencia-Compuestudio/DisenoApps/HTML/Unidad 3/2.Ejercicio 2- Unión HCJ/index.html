@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta author="Daniel" content="Introducción a JavaScript">
+		<link rel="stylesheet" type="text/css" href="CSS/JS.css">
+		<link rel="shorcut icon" href="IMG/JS.png">
+		<title>Introducción a JavaScript</title>
+	</head>
+	<a style="color: #000; text-decoration: none;" href="../0.Raiz/index.html"><-- Inicio</a>
+			<center>
+				<a style="color: #000; text-decoration: none;" href="../3.Ejercicio 3 - Clonar/Taller_DOM_Basico/index.html">Siguiente --></a>
+			</center>
+	<body>
+		<h1 class="Titulo">Introducción a JavaScript</h1>
+		<section>
+			<form>
+				<h3>Primer Ejercicio DOM</h3>
+				<label>Nombre:</label>
+				<input type="text" id="nombre" placeholder="Ingresar Nombre">
+				<br>
+				<input type="text" id="resultado">
+				<button type="button" onclick="saludar()">Aceptar</button>
+				<button type="reset">Cancelar</button>
+			</form>
+		</section>
+		<br>
+		<section>
+			<form>
+				<label>Nombre completo</label>
+				<input type="text" id="nombre2">
+				<label>Programa de formaciòn:</label>
+				<input type="text" id="programa">
+				<button type="button" onclick="registrar()">Registrar</button>
+			</form>
+			<h2>Resultados</h2>
+			<p>Resultado en un input:</p>
+			<input type="text" id="resultado11" readonly>
+			<p id="resultado22">Resultado con innerText</p>
+			<p id="resultado33">Resultado con innerHTML</p>
+			<p id="resultado44">Resultado con textContent</p>
+		</section>
+		<section>
+			<form>
+				<h3>Tercer ejercicio DOM: operaciones nùmericas</h3>
+				<label>Valor 1:</label>
+				<input type="number" id="valorUno" placehorder="Ej: 15.8">
+				<br>
+				<label>Valor 2:</label>
+				<input type="number" id="valorDos" placehorder="Ej: 4.25">
+				<br>
+				<button type="button" onclick="calcularOperaciones()">Calcular</button>
+				<button type="reset">Cancelar</button>
+			</form>
+			<h2>Resultados</h2>
+			<p>Resultado suma: <span id="resultado_suma"></span></p>
+			<p>Resultado rest: <span id="resultado_resta"></span></p>
+			<p>Resultado multiplicación: <span id="resultado_multiplicacion"></span></p>
+			<p>Resultado división: <span id="resultado_division"></span></p>
+		</section>
+	</body>
+	<script src="JavaScript/Js.js"></script>
+</html>

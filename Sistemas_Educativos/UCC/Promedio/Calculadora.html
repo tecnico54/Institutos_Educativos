@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../Imagenes/Promedio.webp">
+        <link rel="stylesheet" href="../CSS/Promedio.css">
+        <title>Promedio</title>
+    </head>
+    <body>
+        <main class="Materia">
+            <a class="Menu" href="../Ucc.html"><-- Regresar</a>
+            <h1 class="Materia__Titulo">Calculadora:</h1>
+            <center>
+                <p id="calificacion"></p>
+                <form>
+                    <input class="Materia__Formulario-TextBox" type="text" id="materia" placeholder="Ingrese su materia">
+                    <input class="Materia__Formulario-TextBox" type="number" id="nota" placeholder="Ingrese sus notas"><br>
+                    <button class="Materia__Formulario-Boton-Cancelar" type="button" id="cancelar" onclick="borrar()">Cancelar</button>
+                    <button class="Materia__Formulario-Boton-Calcular" type="button" id="aceptar" onclick="materiaProgreso()">Aceptar</button>
+                </form><br>
+                <button class="Materia__Formulario-Boton-Calcular" type="button" id="promedio" onclick="promedio()">Calcular promedio</button>
+                <button class="Materia__Formulario-Boton-Regresar" type="button" id="regresar" onclick="regresar()">Regresar</button>
+                <button class="Materia__Formulario-Boton-Eliminar" type="button" id="eliminar" onclick="eliminar()">Eliminar</button>
+            </center>
+            <table class="Tabla">
+                <thead id="tabla__Cabezera"></thead>
+                <tbody id="tabla__Cuerpo"></tbody>
+            </table>
+        </main>
+    </body>
+    <script src="../JavaScript/Calculadora.js"></script>
+</html>

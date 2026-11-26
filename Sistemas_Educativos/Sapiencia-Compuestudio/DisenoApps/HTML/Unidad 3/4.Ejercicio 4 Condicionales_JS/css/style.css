@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #222;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main{
+    display: flex;
+}
+
+section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    width: 43%;
+    margin-bottom: 1.5rem;
+    margin-left: 30px;
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: inline-block;
+    width: 90px;
+}
+
+form input {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+    width: 70%;
+}
+
+form input[readonly] {
+    background-color: #f0f0f0;
+}
+
+
+button {
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    width: 44.5%;
+}
+
+button[type="reset"] {
+    background-color: #706565;
+}
+
+
+button[type="button"] {
+    background-color: #067949;
+}
+
+        .reglas {
+            display: grid;
+            margin: 1rem 0;
+            padding: 1rem;
+        }
+
+        .reglas label {
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.9rem;
+
+        }
+
+        .reglas input[type="checkbox"] {
+            flex: 0 0 auto;
+            margin-top: 0.2rem;
+            accent-color: #2563eb;
+        }
+
+        label{
+            text-align: justify;
+        }

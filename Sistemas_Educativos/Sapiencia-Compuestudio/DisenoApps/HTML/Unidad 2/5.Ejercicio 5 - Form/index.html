@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/Form.css">
+		<link rel="shortcut icon" href="IMG/Form.png">
+		<title>Formulario</title>
+	</head>
+	<header class="Menu">
+			<nav><br>
+				<ul>
+					<li class="Menu__list">
+						<a href="../0.Raiz/index.html">Inicio</a>
+					</li>
+					<li class="Menu__list">
+						<a href="HTML/Login.html">Login</a>
+					</li>
+					<li class="Menu__list">
+						<a href="HTML/Registro.html">Registro</a>
+					</li>
+				</ul>
+				<br>
+				<h1>Formulario en HTML</h1>
+			</nav>
+		</header>
+	<body>
+		<a style="color: #000; text-decoration: none;" href="../6.Ejercicio 6 - Table/index.html">Siguiente --></a>
+		<!--Formulario de texto-->
+		<main class="Contain">
+			<fieldset>
+				<legend>Texto</legend><br>
+				<p>Campos de texto básicos: simple, con placeholder, obligatorio (required), de solo lectura (readonly) y deshabilitado (disabled).</p>
+					<form class="Contain__formulario"><br>
+						<h2>Campo de texto</h2><br>
+						<input T type="text"><br><br>
+						<h2>Campo de placeholder</h2><br>
+						<input T type="text" placeholder="Esto es..."><br><br>
+						<h2>Campo obligatorio</h2><br>
+						<input T type="text" placehoder="Campo Obligatorio" required="true"><br><br>
+						<input class="Contain__formulario-boton1" type="submit" value="Enviar">
+						<input class="Contain__formulario-boton2" type="submit" value="Restablecer">
+					</form>
+			</fieldset>
+		</main>
+		<br>
+		<!--Formulario de contraseña-->
+		<main class="Contain">
+			<fieldset>
+				<legend>Contacto</legend><br>
+				<p>Campos especializados para datos de contacto: contraseña, correo electrónico, teléfono y URL, cada uno con su propio teclado y validación en el navegador.</p>
+					<form class="Contain__formulario"><br>
+						<h2>Contraseña</h2><br>
+						<input T type="password" placeholder="Contraseña"><br><br>
+						<h2>E-mail</h2><br>
+						<input T type="email"placeholder="E-mail"><br><br>
+						<h2>URL</h2><br>
+						<input T type="URL" placehoder="URL: https://YouTube.com" required="true"><br><br>
+						<input class="Contain__formulario-boton1" type="submit" value="Enviar">
+						<input class="Contain__formulario-boton2" type="submit" value="Restablecer">
+					</form>
+			</fieldset>
+		</main>
+		<br>
+		<!--Formulario numèrico-->
+		<main class="Contain">
+			<fieldset>
+				<legend>Numèrico</legend><br>
+				<p>Campos para valores numéricos: un número con límites (min/max) y un deslizador (range) para elegir un valor dentro de un rango.</p>
+					<form class="Contain__formulario"><br>
+						<h2>Nùmero</h2><br>
+						<input T type="number" placeholder="Nùmero"><br><br>
+						<h2>Rango</h2><br>
+						<input T type="range"><br><br>
+						<input class="Contain__formulario-boton1" type="submit" value="Enviar">
+						<input class="Contain__formulario-boton2" type="submit" value="Restablecer">
+					</form>
+			</fieldset>
+		</main>
+		<br>
+		<!--Formulario de fecha y hora-->
+		<main class="Contain2">
+			<fieldset>
+				<legend>Fech&Hora</legend><br>
+				<p>Selectores nativos de fecha y hora: fecha, fecha y hora combinadas, hora, semana del año y mes.</p>
+					<form><br>
+						<h2>Fecha</h2><br>
+						<input T type="date" placeholder="Nùmero"><br><br>
+						<h2>Hora</h2><br>
+						<input T type="time"><br><br>
+						<h2>Semana</h2><br>
+						<input T type="week"><br><br>
+						<h2>Mes</h2><br>
+						<input T type="month"><br><br>
+						<input class="Contain__formulario-boton1" type="submit" value="Enviar">
+						<input class="Contain__formulario-boton2" type="submit" value="Restablecer">
+					</form>
+			</fieldset>
+		</main> 
+		<br>
+		<!--Formulario de Selección-->
+		<main class="Contain3">
+			<fieldset>
+				<legend>Selección</legend><br>
+				<p>Controles de selección: elegir un color, marcar una casilla, elegir una opción de un grupo de radios y subir un archivo.</p>
+					<form><br>
+						<h2>Color</h2><br>
+						<input T type="color"><br><br>
+						<h2 class="Boton">Casilla de verificación</h2>
+						<input T type="checkbox">
+						<input T type="checkbox"><br><br>
+						<h2 class="Boton">Botón de radio</h2>
+						<input T type="radio">
+						<input T type="radio"><br><br>
+						<h2>Archivo</h2><br>
+						<input T type="file"><br><br>
+						<input class="Contain__formulario-boton1" type="submit" value="Enviar">
+						<input class="Contain__formulario-boton2" type="submit" value="Restablecer">
+					</form>
+			</fieldset>
+		</main>
+		<br>
+		<!--Listas desplegables-->
+		<main class="Contain4">
+			<fieldset class="Campo">
+				<legend>Listas desplegables (select)</legend><br>
+				<p>Listas desplegables con el elemento select: una opción simple, una con valor preseleccionado (selected), una agrupada con optgroup, una de selección múltiple (multiple) y una deshabilitada (disabled).</p><br>
+					<h2>Selección simple</h2>
+					<select O>
+						<option>Seleccione una opción</option>
+						<option>Opción 1</option>
+						<option>Opción 2</option>
+						<option>Opción 3</option>
+					</select><br><br>
+					<h2>Seleción con opción seleccionada</h2>
+					<select O>
+						<option>Opción 1</option>
+						<option>Opción 2</option>
+						<option>Opción 3</option>
+					</select><br><br>
+					<h2>Selección con grupos (optgroup)</h2>
+					<select O>
+						<optgroup label="Frutas">
+						<option>Manzana</option>
+						<option>Pera</option>
+						</optgroup>
+						<optgroup label="Verduras">
+						<option>Zanahoria</option>
+						<option>Lechuga</option>
+						</optgroup>
+					</select><br><br>
+					<h2>Selección múltiple</h2>
+					<select multiple>
+						<option>Opción 1</option>
+						<option>Opción 2</option>
+						<option>Opción 3</option>
+					</select>
+						<br>
+						<h2>Selección deshabilitada</h2>
+					<select disabled>
+						<option>Opción 1</option>
+					</select><br><br>
+						<input class="Contain__formulario-boton1" type="submit" value="Enviar">
+						<input class="Contain__formulario-boton2" type="submit" value="Restablecer">
+			</fieldset>
+		</main> 
+	</body>
+</html>

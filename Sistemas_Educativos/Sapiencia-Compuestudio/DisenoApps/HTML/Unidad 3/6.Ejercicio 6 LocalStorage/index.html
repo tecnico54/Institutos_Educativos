@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/LocalStorage.css">
+        <title>LocalStorage</title>
+    </head>
+    <body>
+        <a href="../../../index.html"><-- Menú</a>
+        <section>
+            <h2>Ejercicio 1: Guardar nombre</h2>
+            <form>
+                <label>Nombre:</label>
+                <input type="text" id="nombre">
+                <button type="button" onclick="guardarNombre()">Guardar Nombre</button>
+            </form>
+            <p id="resultado"></p>
+        </section><br>
+        <section>
+            <h2>Ejercicio 2: Mostra nombre</h2>
+            <form>
+                <button type="button" onclick="mostrar()">Mostrar Nombre</button>
+            </form>
+            <p id="resultadoM"></p>
+        </section><br>
+        <section>
+            <h2>Ejercicio 3: Editar nombre</h2>
+            <form>
+                <input type="number" id="posicion" placeholder="Cambiar">
+                <input type="text" id="nuevo" placeholder="Nombre nuevo">
+                <button type="button" onclick="editar()">Editar Nombre</button>
+            </form>
+            <p id="resultadoE"></p>
+        </section><br>
+        <section>
+            <h2>Ejercicio 4: Eliminar nombre</h2>
+            <form>
+                <button type="button" onclick="eliminar()">Eliminar Nombre</button>
+            </form>
+            <p id="resultadoEl"></p>
+        </section><br>
+        <section>
+        <h2>Guardar una mascota</h2>
+        <form action="">
+            <label for="mascota">Mascota:</label>
+            <input type="text" id="mascota">
+
+            <label for="raza">Raza:</label>
+            <input type="text" id="raza">
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" min="0">
+
+            <button type="button" onclick="guardarMascota()">
+                Guardar mascota
+            </button>
+        </form>
+        <p id="resultadoMascota"></p>
+    </section>
+    </body>
+    <script src="JavaScript/LocalStorage.js"></script>
+</html>

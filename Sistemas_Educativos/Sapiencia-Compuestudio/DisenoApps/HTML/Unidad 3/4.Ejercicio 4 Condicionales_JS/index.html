@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura condicional</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+        <h1>Ejercicio Ejemplos: Estructura condicional</h1>
+        <a style="color: #000; text-decoration: none;" href="../0.Raiz/index.html"><-- Inicio</a>
+			<center>
+				<a style="color: #000; text-decoration: none;" href="../5.Ejercicio 5 Array/index.html">Siguiente --></a>
+            </center>
+</header>
+
+<main>
+
+    <section>
+        <p>
+            <b>Enunciado:</b> Una tienda necesita un formulario para calcular el total a pagar de una
+            compra a partir del producto, la cantidad y el precio unitario ingresados por el
+            usuario. El sistema debe validar los datos y aplicar descuentos e IVA según las
+            siguientes reglas:
+        </p>
+     
+        <div class="reglas">
+            <label><input type="checkbox"> Validar que los campos producto, cantidad y precio no estén vacíos.</label>
+
+            <label><input type="checkbox"> Validar que la cantidad y el precio sean mayores que cero.</label>
+
+            <label><input type="checkbox"> Calcular el subtotal multiplicando la cantidad por el precio unitario.</label>
+
+            <label><input type="checkbox"> Aplicar un borde rojo a los campos que contengan datos inválidos.</label>
+
+            <label><input type="checkbox"> Mostrar una alerta con un mensaje que informe los errores de validación.</label>
+
+            <label><input type="checkbox"> Si el subtotal es menor a $100.000, no aplicar ningún descuento.</label>
+
+            <label><input type="checkbox"> Si el subtotal es igual o superior a $100.000 y menor a $300.000, aplicar un descuento del 10%.</label>
+
+            <label><input type="checkbox"> Si el subtotal es igual o superior a $300.000 y menor a $500.000, aplicar un descuento del 20%.</label>
+
+            <label><input type="checkbox"> Si el subtotal es igual o superior a $500.000, aplicar un descuento del 30%.</label>
+
+            <label><input type="checkbox"> Calcular el IVA correspondiente al 19% del subtotal.</label>
+
+            <label><input type="checkbox"> Excluir del cálculo del IVA los productos huevo, leche y pan.</label>
+
+            <label><input type="checkbox"> Calcular el total a pagar utilizando la siguiente fórmula: Total = Subtotal - Descuento + IVA.</label>
+        </div>
+  
+    </section>
+
+        <section>
+        <h2>Ejercicio1: </h2>
+
+
+        <form id="formulario" action="">
+            <label for="producto">Producto: </label>
+            <input type="text" id="producto" name="producto">
+            <br>
+
+            <label for="cantidad">Cantidad: </label>
+            <input type="number" id="cantidad" name="cantidad">
+            <br>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio">
+            <br>
+
+            <label for="subtotal">Subtotal:</label>
+            <input type="text" id="subtotal" name="subtotal" readonly>
+            <br>
+
+            <label for="descuento">Descuento: </label>
+            <input type="text" id="descuento" name="descuento" readonly>
+            <br>
+
+            <label for="iva">IVA</label>
+            <input type="text" id="iva" name="iva" readonly>
+            <br>
+
+            <label for="total">Total:</label>
+            <input type="text" id="total" name="total" readonly>
+            <br>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+            <button type="reset">Cancelar</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

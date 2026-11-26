@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+		<link rel="shortcut icon" href="IMG/Tabla.png">
+		<title>Práctica de tablas</title>
+	</head>
+	<header>
+        <span class="etiqueta">HTML · Práctica</span>
+        <h1>Práctica de tablas en HTML</h1>
+        <p>Ejemplos de filas, encabezados, secciones, celdas combinadas y estilos con CSS.</p>
+		<a style="color: #fff; text-decoration: none;" href="../0.Raiz/index.html">Inicio</a>
+    </header>
+	<body>
+		<a style="color: #000; text-decoration: none;" href="../7.Evaluaciòn/index.html">Evaluación</a>
+	    <main>
+	        <p class="intro">Explora los diferentes tipos de tablas. Pasa el cursor sobre las filas para ver el efecto de color.</p>
+	        <div class="barra">
+	            <h2><span class="numero">01</span>Tabla básica</h2>
+	        </div>
+	        <section class="tarjeta">
+	            <table>
+	                <tbody>
+	                    <tr><td>Ana</td><td>4.5</td></tr>
+	                    <tr><td>Carlos</td><td>3.8</td></tr>
+	                </tbody>
+	            </table>
+	        </section>
+	        <div class="barra">
+	            <h2><span class="numero">02</span>Encabezados</h2>
+	        </div>
+	        <section class="tarjeta">
+	            <table>
+	                <thead>
+	                    <tr><th>Aprendiz</th><th>Nota</th></tr>
+	                </thead>
+	                <tbody>
+	                    <tr><td>Ana</td><td>4.5</td></tr>
+	                </tbody>
+	            </table>
+	        </section>
+	        <div class="barra">
+	            <h2><span class="numero">03</span>Tabla con total</h2>
+	        </div>
+	        <section class="tarjeta">
+	            <table>
+	                <thead>
+	                    <tr><th>Producto</th><th>Precio</th></tr>
+	                </thead>
+	                <tbody>
+	                    <tr><td>Teclado</td><td>$85.000</td></tr>
+	                    <tr><td>Mouse</td><td>$40.000</td></tr>
+	                </tbody>
+	                <tfoot>
+	                    <tr><td>Total</td><td>$125.000</td></tr>
+	                </tfoot>
+	            </table>
+	        </section>
+	        <div class="barra">
+	            <h2><span class="numero">04</span>Datos personales</h2>
+	        </div>
+	        <section class="tarjeta">
+	            <table>
+	                <thead>
+	                    <tr><th colspan="2">Datos personales</th><th>Ficha</th></tr>
+	                </thead>
+	                <tbody>
+	                    <tr><td>Ana</td><td>Gómez</td><td>2875432</td></tr>
+	                </tbody>
+	            </table>
+	        </section>
+	        <div class="barra">
+	            <h2><span class="numero">05</span>Horario semanal</h2>
+	        </div>
+	        <section class="tarjeta">
+	            <table>
+	                <tbody>
+	                    <tr><th class="celda-lunes" rowspan="2">Lunes</th><td class="hora">7:00 a. m.</td><td>HTML</td></tr>
+	                    <tr><td class="hora">9:00 a. m.</td><td>CSS</td></tr>
+	                </tbody>
+	            </table>
+	        </section>
+	        <div class="barra">
+	            <h2><span class="numero">06</span>Encabezados accesibles</h2>
+	        </div>
+	        <section class="tarjeta">
+	            <table>
+	                <thead>
+	                    <tr><th scope="col">Aprendiz</th><th scope="col">Nota</th></tr>
+	                </thead>
+	                <tbody>
+	                    <tr><th scope="row">Ana</th><td>4.5</td></tr>
+	                </tbody>
+	            </table>
+	        </section>
+	        <div class="barra">
+	            <h2><span class="numero">07</span>Notas del primer semestre</h2>
+	        </div>
+	        <section class="tarjeta">
+	            <table>
+	                <caption>Resultados del grupo</caption>
+	                <thead>
+	                    <tr><th scope="col">Aprendiz</th><th scope="col">Ficha</th><th scope="col">Nota</th></tr>
+	                </thead>
+	                <tbody>
+	                    <tr><td>Ana Gómez</td><td>2875432</td><td>4.5</td></tr>
+	                    <tr><td>Carlos Ruiz</td><td>2875432</td><td>3.8</td></tr>
+	                    <tr><td>Laura Pérez</td><td>2875432</td><td>4.2</td></tr>
+	                    <tr><td>Andrés Mejía</td><td>2875432</td><td>3.5</td></tr>
+	                </tbody>
+	                <tfoot>
+	                    <tr><td colspan="2">Promedio del grupo</td><td>4.0</td></tr>
+	                </tfoot>
+	            </table>
+	        </section>
+	        <a class="siguiente" href="HTML/Horario.html">Ir a la página siguiente →</a>
+	    </main>
+	    <footer class="pie">Práctica de HTML y CSS · Tablas</footer>
+	</body>
+</html>

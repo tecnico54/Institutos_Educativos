@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta author="Daniel David Arboleda Valencia">
+		<meta Description="">
+		<meta worldkey="Python">
+		<link rel="shortcut icon" href="../IMG/Diseño_de_apps.png">
+		<title>Taller 3 - Ciclos</title>
+	</head>
+	<font size="5px">
+		<a style="text-decoration: none; color: #48e;" href="../index.html">
+			<-- Volver
+		</a>
+	</font>
+<body>
+		<p>
+		#Taller 1: Adivina el numero
+		<br>
+		print("==" * 30)
+		<br>
+		#Libreria para los numeros aleatorios
+		<br>
+		import random
+		#Intrucción
+		<br>
+		print("El sistema va a mostrarle aleatoriamente números enteros,\nusted debera adivinarlos.")
+		<br>
+		#Petición de selección
+		<br>
+		print("Seleccionar un números: ")
+		<br>
+		#Ciclo For (Para mostrar los números de 1 al 10)
+		<br>
+		for i in range(1, 11):
+		<br>
+		    print(i, end=" ")
+		    <br>
+		#Peticiones al usuario
+		<br>
+		numero = int(input("\nIngrese un número: "))
+		<br>
+		#Números aleatorios (enteros)
+		<br>
+		numero_aleatorio = 3
+		<br>
+		#Ciclo while (Mientras)
+		<br>
+		while numero != numero_aleatorio:
+		<br>
+		#Condiciones (si es menor o igual a 0 o si es mayor a 10)
+		<br>
+		    if numero <= 0:
+		    <br>
+		        print("Error")
+		        <br>
+		        numero = int(input("\nIngrese nuvamente un número positivo: "))
+		        <br>
+		    elif numero > 10:
+		    <br>
+		        print("Error")
+		        <br>
+		        numero = int(input("\nIngrese nuvamente un número menor a 10: "))
+		        <br>
+		    else:
+		    <br>
+		        print("Lo siento, intantarlo otra vez")
+		        <br>
+		        numero = int(input("\nIntetarlo nuvamente: "))
+		        <br>
+		else:
+		<br>
+		    print("¡Felicidades, adivinaste el número!")
+		    <br>
+		#Mostrar resultado
+		<br>
+		print(f"El número aleatorio es: {numero_aleatorio}")
+		<br><br>
+		#Taller 2: Cuenta regresiva
+		<br>
+		print("==" * 30)
+		<br>
+		#Petición al usuario
+		<br>
+		numero_positivo = int(input("Ingrese un número: "))
+		<br>
+		#Condiciones (si es menor a 0)
+		<br>
+		if numero_positivo < 0:
+		<br>
+		    print("Error")
+		    <br>
+		    exit()
+		    <br>
+		#Ciclo while (Mientras)
+		<br>
+		while numero_positivo >= 0:
+		<br>
+		        print(numero_positivo, end=" ")
+		        <br>
+		        numero_positivo = numero_positivo -1
+		        <br>
+		#Mostrar resultado
+		<br>
+		print("La operación ha finalizo")
+		<br><br>
+		#Taller 3: Números impares
+		<br>
+		print("==" * 30)
+		<br>
+		print("Los números enteros son:")
+		<br>
+		#Ciclo For (Para mostrar los números de 1 al 100)
+		<br>
+		for e in range(1, 101):
+		<br>
+		    print(e, end=" ")
+		    <br>
+		print("Los números impares son:")
+		<br>
+		#Ciclo For (Para mostrar los números de 1 al 100 (impares))
+		<br>
+		for i in range(1, 101):
+		<br>
+		    if i % 2 != 0:
+		    <br>
+		        print(i, end=" ")
+		        <br><br>
+		#Taller 4: Menú
+		<br>
+		print("==" * 30)
+		<br>
+		#libreria de la fecha actual
+		<br>
+		from datetime import date
+		<br>
+		#Definir la variable como nula
+		<br>
+		opcion = 0
+		<br>
+		#Mostrar fecha actual
+		<br>
+		fecha = date.today()
+		<br>
+		#Menú
+		<br>
+		print("\nOpción 1 | Opción 2 | Opción 3")
+		<br>
+		#Ciclo while (Mientras)
+		<br>
+		while opcion != 3:
+		<br>
+		#Petición
+		<br>
+		    opcion = int(input("\nSeleccionar una opción: "))
+		    <br>
+		#Condiciones
+		<br>
+		    if opcion == 1:
+		    <br>
+		        print("Bienvenido/a")
+		        <br>
+		    elif opcion == 2:
+		    <br>
+		        print(f"La fecha actual es: {fecha.strftime("%A %d/%m/%y")}")
+		        <br>
+		    elif opcion == 3:
+		    <br>
+		        print("Saliendo...")
+		        <br>
+		        break
+		        <br>
+		    else:
+		    <br>
+		        print("La opción no coincide")
+		        <br>
+		        exit()
+		        <br><br>
+		#Taller 5: Registro de notas y promedio
+		<br>
+		print("==" * 30)
+		<br>
+		#Petición al usuario
+		<br>
+		nota = int(input("¿Cuantas notas desea registrar?: "))
+		<br>
+		#Definir la variable como nula
+		<br>
+		cantidad = 0
+		<br>
+		suma = 0
+		<br>
+		promedio = 0
+		<br>
+		#Condición (aumento de notas)
+		<br>
+		if nota <= 0:
+		<br>
+		    print("Error, no puede ser numeros negativos o que sea 0")
+		    <br>
+		    exit()
+		    <br>
+		#Ciclo For (Para Aumento de notas segun el usuario)
+		<br>
+		for n in range(1, nota + 1):
+		<br>
+		    cantidad = float(input(f"Digite la nota {n}: "))
+		    <br>
+		#Cálcular
+		<br>
+		    suma = suma + cantidad
+		    <br>
+		    promedio = suma / nota
+		    <br>
+		#Condiciones (Notas)
+		<br>
+		    if nota <= 0:
+		    <br>
+		        print("Error, la nota no puede ser numeros negativos o que sea 0")
+		        <br>
+		        exit()
+		        <br>
+		print(f"El promedio es: {promedio}")
+		<br>
+		if promedio >= 3.0:
+		<br>
+		    print("El estudiante aprobó")
+		    <br>
+		else:
+		<br>
+		    print("El estudiante reprobó")
+		    <br>
+	</p>
+</body>
+</html>

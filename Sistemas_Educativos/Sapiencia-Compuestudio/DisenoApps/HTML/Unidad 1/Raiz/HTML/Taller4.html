@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta author="Daniel David Arboleda Valencia">
+		<meta Description="">
+		<meta worldkey="Python">
+		<link rel="shortcut icon" href="../IMG/Diseño_de_apps.png">
+		<title>Taller 4 - Manejo de error</title>
+	</head>
+	<font size="5px">
+		<a style="text-decoration: none; color: #48e;" href="../index.html">
+			<-- Volver
+		</a>
+	</font>
+<body>
+		<p>
+			#Taller 1:
+			<br>
+			print("==" * 30)
+			<br>
+			try:
+			<br>
+			    num1 = int(input("Ingrese el primer número: "))
+			    <br>
+			    num2 = int(input("Ingrese el segundo número: "))
+			    <br>
+			    operador = input("Ingrese el operador (+, -, *, /): ")
+			    <br>
+			    if operador == "+":
+			    <br>
+			        resultado = num1 + num2
+			        <br>
+			    elif operador == "-":
+			    <br>
+			        resultado = num1 - num2
+			        <br>
+			    elif operador == "*":
+			    <br>
+			        resultado = num1 * num2
+			        <br>
+			    elif operador == "/":
+			    <br>
+			        resultado = num1 / num2
+			        <br>
+			    else:
+			    <br>
+			        print("Operador no válido.")
+			        <br>
+			        resultado = None
+			        <br>
+			    if resultado is not None:
+			    <br>
+			        print(f"Resultado: {resultado:.0f}")
+			        <br>
+			except ValueError:
+			<br>
+			    print("Error: debe ingresar números válidos.")
+			    <br>
+			except ZeroDivisionError:
+			<br>
+			    print("Error: no se puede dividir entre cero.")
+			    <br>
+			    <br>
+			    <br>
+				#Taller 2:
+				<br>
+				print("==" * 30)
+				<br>
+				archivo = ""
+				<br>
+				try:
+				<br>
+				    nombre = input("Ingrese el nombre del archivo: ")
+				    <br>
+				    archivo = open(nombre, "r")
+				    <br>
+				    print("El archivo se abrió correctamente.")
+				    <br>
+				except FileNotFoundError:
+				<br>
+				    print("Error: el archivo no existe.")
+				    <br>
+				print(archivo)
+				<br>
+				<br>
+				<br>
+				#Taller 3:
+				<br>
+				print("==" * 30)
+				<br>
+				dia = ""
+				<br>
+				mes =""
+				<br>
+				ano = ""
+				<br>
+				try:
+				<br>
+				    dia = int(input("Dia: "))
+				    <br>
+				    mes = int(input("Mes: "))
+				    <br>
+				    ano = int(input("Año: "))
+				    <br>
+				    print(f"La fecha: {dia}/{mes}/{ano}")
+				    <br>
+				except ValueError:
+				<br>
+				    print("Error: no se permite carateres")
+				    <br>
+				<br>
+				#Taller 4:
+				<br>
+				print("==" * 30)
+				<br>
+				def raiz_cuadrada(n):
+				<br>
+				    if n < 0:
+				    <br>
+				        raise ValueError
+				        <br>
+				    return n ** 0.5
+				    <br>
+				while True:
+				<br>
+				    try:
+				    <br>
+				        n = int(input("Ingrese un número: "))
+				        <br>
+				        if n < 0:
+				        <br>
+				            print("No se permiten números negativos")
+				            <br>
+				            continue
+				            <br>
+				        raiz = raiz_cuadrada(n)
+				        <br>
+				        print(f"La raíz cuadrada de {n} es: {raiz:.0f}")
+				        <br>
+				        break
+				        <br>
+				    except ValueError:
+				    <br>
+				        print("El número es inválido")
+				        <br>
+				<br>
+				<br>
+				#Taller 5:
+				<br>
+				print("==" * 30)
+				<br>
+				#Descripción
+				<br>
+				print("El Programa te va a solitar números infinitamente, si quisieras parar solo tienes que" \
+				        " escribir fin\n")
+				        <br>
+				#Arreglo
+				<br>
+				numeros = []
+				<br>
+				#Definición
+				<br>
+				suma = 0
+				<br>
+				cantidad = 0
+				<br>
+				promedio = 0
+				<br>
+				while True:
+				<br>
+				    try:
+				    <br>
+				        #Bucle
+				        digitalizacion = float(input("Ingresar números: "))
+				        <br>
+				        #Añadir al arreglo
+				        <br>
+				        numeros.append(digitalizacion)
+				        <br>
+				        #¿Cuantos hay?
+				        <br>
+				        cantidad = len(numeros)
+				        <br>
+				        #Sumar y promediar
+				        <br>
+				        promedio = sum(numeros) / cantidad 
+				        <br>
+				        digitalizacion == "fin"
+				        <br>
+				    except ValueError:
+				    <br>
+				        print(f"El programa se detuvo\nCantidad: {cantidad}\nPromedio: {promedio:,.1f}".replace(",","."))
+				        <br>
+				        exit()
+				        <br>
+		</p>
+</body>
+</html>

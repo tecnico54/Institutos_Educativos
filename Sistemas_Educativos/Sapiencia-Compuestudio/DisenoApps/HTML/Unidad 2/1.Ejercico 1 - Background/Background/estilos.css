@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Menù*/
+.menu{
+    display: inline-block;
+    width: 100%;
+    background-color: #3b82f6;
+}
+.menu__link{
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu__link:hover{
+    background: #000;
+}
+/*Contenido*/
+.contenido{
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+    width: 80%;
+}
+.color{
+    padding: 40px;
+    text-align: center;
+    border: 1px outset rgb(100, 80, 100, 0.5);
+    border-radius: 20px;
+}
+div{
+    background: #f0e;
+    padding: 20px;
+}
+/*fondo degladado*/
+.degradado{
+    margin-top: 40px;
+    padding: 20px;
+    border-left: 2px outset #48e;
+    border-radius: 20px;
+    text-align: center;
+}
+.fondo-degradado{
+    background: linear-gradient(90deg, #48e, #f00);
+}
+/*Fondo imagen*/
+.IMG{
+    margin-top: 40px;
+    padding: 20px;
+    border-left: 2px outset #48e;
+    border-radius: 20px;
+    text-align: center;
+}
+.IMG__div{
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    background-image: URL("../IMG/Goku.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

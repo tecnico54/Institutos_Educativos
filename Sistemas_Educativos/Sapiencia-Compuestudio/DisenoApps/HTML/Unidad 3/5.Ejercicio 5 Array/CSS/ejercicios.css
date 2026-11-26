@@ -1,0 +1,103 @@
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Contenedor principal */
+h1, p, ol {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    background-color: #ffffff;
+    color: #1e3c72;
+    padding: 30px 25px 10px;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+p {
+    background-color: #ffffff;
+    padding: 15px 25px;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Lista de ejercicios */
+ol {
+    background-color: #ffffff;
+    padding: 10px 40px 30px 60px;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Elementos de la lista */
+li {
+    margin: 12px 0;
+    padding: 15px;
+    background-color: #f1f5fb;
+    border-left: 5px solid #2a5298;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: #1e3c72;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+/* Efecto al pasar el cursor */
+li:hover {
+    background-color: #dce8fa;
+    transform: translateX(8px);
+    border-left-color: #00a8cc;
+}
+
+a:hover {
+    color: #007b9e;
+}
+
+/* Diseño adaptable a móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    ol {
+        padding-left: 45px;
+        padding-right: 20px;
+    }
+
+    li {
+        padding: 12px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}

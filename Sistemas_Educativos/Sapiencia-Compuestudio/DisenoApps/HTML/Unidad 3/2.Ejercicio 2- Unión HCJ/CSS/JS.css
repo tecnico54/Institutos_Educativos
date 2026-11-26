@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial, sans-serif;
+	background: #fff;
+}
+.Titulo{
+	margin: 25px;
+	text-align: center;
+}
+section{
+	margin: 24px auto;
+	padding: 20px;
+	max-width: 480px;
+	border: 2px solid #89F336;
+}
+form{
+	display: grid;
+	gap: 10px;
+}
+input[type="text"], input[type="number"]{
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+button{
+	padding: 10px;
+	background: #89F336;
+	border: none;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+}
+h2{
+	color: #2f5e0a;
+}
+lable{
+	margin-right: 4px;
+	font-weight: 600;
+}
+#resultado11{
+	background: #f0f0f0;
+	width: 400px;
+}
+#resultado22, #resultado33, #resultado44{
+	margin: 6px 0;
+	padding: 8px;
+	background: #f3fde9;
+	border-radius: 6px;
+}

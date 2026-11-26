@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--color_titulo: #f00;
+	--color_fondo: #f0e;
+	--fondo_negro: #000;
+	--color_texto: #fff;
+	--color_viewport: #48e;
+}
+.Brain{
+	padding: 20px;
+	text-align: center;
+	background: var(--color_viewport);
+}
+.Brain > h1{
+	color: var(--color_titulo);
+}

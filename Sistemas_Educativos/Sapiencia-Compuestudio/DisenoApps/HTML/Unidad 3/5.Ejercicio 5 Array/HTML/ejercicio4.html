@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/ejercicio4.css">
+        <title>Reto final</title>
+    </head>
+   <body Cuerpo>
+        <a href="../index.html"><-- Menú</a>
+        <h1 class="Titulo">Buscador de estudiantes</h1>
+        <form class="Titulo__Formulario">
+            Nombre completo: <input type="text" id="estudiante" placeholder="Nombre del Estudiante"><br><br>
+            Edad: <input type="number" id="edad" placeholder="Edad del Estudiante"><br><br>
+            Curso: <input type="text" id="curso" placeholder="Curso del Estudiante"><br><br>
+                    <button onclick="quest()" class="Titulo__Formulario-Boton" type="button">Buscar</button>
+        </form>
+        <table class="Tabla">
+            <thead>
+                <th class="Tabla__Cabezera">Estudiante</th>
+                <th class="Tabla__Cabezera">Edad</th>
+                <th class="Tabla__Cabezera">Curso</th>
+            </thead>
+            <tbody id="Tabla__Cuerpo">
+            </tbody>
+        </table>
+        <script src="../JavaScript/ejercicio4.js"></script>
+   </body>
+</html>

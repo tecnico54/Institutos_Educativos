@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main{
+	margin: 25px auto;
+}
+a{
+	padding-left: 25px;
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	font-size: 25px;
+	color: #f00;
+}
+body{
+	background: linear-gradient(90deg, #75e, #f00);
+	overflow-x: hidden;
+}
+.Horario{
+	margin: 100px auto;
+	background: #fff;
+	opacity: 0.8;
+	width: 700px;
+}
+.Horario__Tablas, .Horario__Tablas-Pie{
+	border: 2px outset #000;
+	text-align: center;
+}
+.Horario__Tablas-Aula{
+	color: rgba(100, 100, 100, 0.8);
+}
+@media screen and (max-width: 700px){
+	.Horario{
+		margin: 0;
+		width: 555px;
+	}
+	.Horario__Tablas{
+		overflow-wrap: wrap;
+	}
+}

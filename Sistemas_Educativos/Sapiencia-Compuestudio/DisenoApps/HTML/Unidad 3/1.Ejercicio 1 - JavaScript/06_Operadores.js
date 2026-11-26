@@ -1,0 +1,12 @@
+console.log("Operadores");
+let esMayor = true;
+let esPar = false;
+console.log(esMayor && esPar);
+console.log(esMayor || esPar);
+console.log("\nIncremento");
+let valor = 10;
+valor += 5;
+console.log(valor);
+console.log("\nnùmero positivo");
+let num = 8;
+console.log(num > 0 && num % 2 === 0);

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta author="Daniel David Arboleda Valencia">
+		<meta Description="">
+		<meta worldkey="Python">
+		<link rel="shortcut icon" href="../IMG/Diseño_de_apps.png">
+		<title>Taller 2 - Condicionales</title>
+	</head>
+	<font size="5px">
+		<a style="text-decoration: none; color: #48e;" href="../index.html">
+			<-- Volver
+		</a>
+	</font>
+<body>
+		<p>
+		#Taller 1: Edad (mayor o menor)
+		<br>
+		print("==" * 30)
+		<br>
+		#Peticiones al usuario
+		<br>
+		nombre = input("Ingrese su nombre: ")
+		<br>
+		edad = int(input("Ingrese su edad: "))
+		<br>
+		#Definir variable de texto como nulo
+		<br>
+		menor = ""
+		<br>
+		#Condiciones
+		<br>
+		if edad < 0:
+		<br>
+		    print("No se puede números negativos")
+		    <br>
+		    exit()
+		    <br>
+		elif edad > 18:
+		<br>
+		    print("Usted es mayor de edad")
+		    <br>
+		elif edad < 18:
+		<br>
+		    falta = 18 - edad
+		    <br>
+		#Mensaje
+		<br>
+		    menor = f"Usted es menor de edad, y le faltan {falta} años para cumplir 18 años"
+		    <br>
+		#Mostrar resultado
+		<br>
+		print(f"Nombre: {nombre}\nEdad: {edad} años\n{menor}")
+		<br><br>
+		#Taller 2: Calificaciones
+		<br>
+		print("==" * 30)
+		<br>
+		#Peticiones al usuario
+		<br>
+		estudiante = input("Ingrese su nombre como estudiante: ")
+		<br>
+		calificacion = float(input("Ingrese su calificación (0.0 - 5.0): "))
+		<br>
+		#Definir variables de texto como nulo
+		<br>
+		nota = ""
+		<br>
+		desempeno = ""
+		<br>
+		#Condiciones
+		<br>
+		if calificacion < 0:
+		<br>
+		    print("No se puede números negativos")
+		    <br>
+		    exit()
+		    <br>
+		elif calificacion > 5:
+		<br>
+		    print("La calificación no puede ser mayor a 5.0")
+		    <br>
+		else:
+		<br>
+		    nota = f"Estudiante: {estudiante}, su calificación es: {calificacion}"
+		    <br>
+		    if calificacion < 3.0:
+		    <br>
+		        desempeno = "Insuficiente"
+		        <br>
+		    elif calificacion >= 3.0 and calificacion <= 3.4:
+		    <br>
+		        desempeno = "Aceptable"
+		        <br>
+		    elif calificacion >= 3.5 and calificacion <= 4.4:
+		    <br>
+		        desempeno = "Bueno"
+		        <br>
+		    elif calificacion >= 4.5 and calificacion <= 5.0:
+		    <br>
+		        desempeno = "Excelente"
+		        <br>
+		    if calificacion >= 3.0:
+		    <br>
+		        print("\nNos complace informarle que usted aprobó la materia")
+		        <br>
+		    else:
+		    <br>
+		        print("\nLe informamos que usted reprobó la materia")
+		        <br>
+		#Mostrar resultado
+		<br>
+		print(nota)
+		<br>
+		print(desempeno)
+		<br><br>
+		#Taller 3: Compras
+		<br>
+		print("==" * 30)
+		<br>
+		#Peticiones al usuario
+		<br>
+		peticion = input("¿Cuál es su nombre?: ")
+		<br>
+		valor = float(input("¿Cuál es el valor de su compra?: "))
+		<br>
+		#Definir variables numericas como nulo
+		<br>
+		descuento_porcentaje = 0
+		<br>
+		descuento = 0
+		<br>
+		#Definir
+		<br>
+		total = valor
+		<br>
+		#Condiciones
+		<br>
+		if valor < 0:
+		<br>
+		    print("No se puede números negativos")
+		    <br>
+		    exit()
+		    <br>
+		elif valor < 10000:
+		<br>
+		    print("Sin descuento")
+		    <br>
+		elif valor > 10000 and valor < 299999:
+		<br>
+		    descuento_porcentaje = 0.10
+		    <br>
+		    descuento = valor * descuento_porcentaje
+		    <br>
+		    total = valor - descuento
+		    <br>
+		elif valor > 300000 and valor < 499999:
+		<br>
+		    descuento_porcentaje = 0.15
+		    <br>
+		    descuento = valor * descuento_porcentaje
+		    <br>
+		    total = valor - descuento
+		    <br>
+		else:
+		<br>
+		    valor >= 500000
+		    <br>
+		    descuento_porcentaje = 0.20
+		    <br>
+		    descuento = valor * descuento_porcentaje
+		    <br>
+		    total = valor - descuento
+		    <br>
+		#Mostrar resultado sin decimales y porsentaje
+		<br>
+		print(f"Valor: ${valor:,.0f}".replace(",","."))
+		<br>
+		print(f"Descuento: {descuento_porcentaje:.0%} de descuento")
+		<br>
+		print(f"Valor descontado: ${descuento:,.0f}".replace(",","."))
+		<br>
+		print(f"Total: ${total:,.0f}".replace(",","."))
+		<br><br>
+		#Taller 4: Temperatura
+		<br>
+		print("==" * 30)
+		<br>
+		#Peticiones al usuario
+		<br>
+		ciudad = input("Ingresar el nombre de la ciudad: ")
+		<br>
+		temparatura = int(input("Ingresar la temparatura actual en grados celsius: "))
+		<br>
+		#Definir variables de texto como nulo
+		<br>
+		clasificacion = ""
+		<br>
+		recomendacion = ""
+		<br>
+		#Condiciones
+		<br>
+		if temparatura <= 10:
+		<br>
+		    clasificacion = "Muy fria" 
+		    <br>
+		    recomendacion ="Favor de llevar un abrigo grueso, bufanda y guantes"
+		    <br>
+		elif temparatura <= 17:
+		<br>
+		    clasificacion = "Fria"
+		    <br>
+		    recomendacion = "Favor de llevar una chaqueta o abrigo"
+		    <br>
+		elif temparatura <= 25:
+		<br>
+		    clasificacion = "Templada"
+		    <br>
+		    recomendacion = "Favor de llevar ropa ligera"
+		    <br>
+		elif temparatura <= 32:
+		<br>
+		    clasificacion = "Caliente"
+		    <br>
+		    recomendacion = "Favor de llevar ropa fresca y tomar agua"
+		    <br>
+		else:
+		<br>
+		    temparatura > 32
+		    <br>
+		    clasificacion = "Muy caliente"
+		    <br>
+		    recomendacion = "Favor de llevar ropa muy fresca, hidratarse y evitar el sol"
+		    <br>
+		#Mostrar resultado
+		<br>
+		print(f"Ciudad: {ciudad}")
+		<br>
+		print(f"Temperatura: {temparatura}°C")
+		<br>
+		print(f"Clasificación: {clasificacion}")
+		<br>
+		print(f"Recomendación: {recomendacion}")
+		<br><br>
+		#Taller 5:  Trabajo y sueldo
+		<br>
+		print("==" * 30)
+		<br>
+		#Peticiones al usuario
+		<br>
+		nombre = input("Ingrese el nombre del empleado: ")
+		<br>
+		horas = int(input("Ingrese las horas trabajadas: "))
+		<br>
+		valor_hora = float(input("Ingrese el valor de cada hora: "))
+		<br>
+		#Definir variables numericas como nulo
+		<br>
+		horas_normales = 0
+		<br>
+		horas_extra = 0
+		<br>
+		pago_normal = 0
+		<br>
+		pago_extra = 0
+		<br>
+		salario_bruto = 0
+		<br>
+		descuento_porcentaje = 0
+		<br>
+		descuento = 0
+		<br>
+		salario_neto = 0
+		<br>
+		#Condicionales
+		<br>
+		if horas <= 0 or valor_hora <= 0:
+		<br>
+		    print("No se puede números negativos")
+		    <br>
+		    exit()
+		    <br>
+		elif horas <= 160:
+		<br>
+		    horas_normales = horas
+		    <br>
+		    horas_extra = 0
+		    <br>
+		else:
+		<br>
+		    horas_normales = 160
+		    <br>
+		    horas_extra = horas - 160
+		    <br>
+		    pago_normal = horas_normales * valor_hora
+		    <br>
+		    pago_extra = horas_extra * valor_hora * 1.25
+		    <br>
+		    salario_bruto = pago_normal + pago_extra
+		    <br>
+		    descuento_porcentaje = 0.08
+		    <br>
+		    descuento = salario_bruto * descuento_porcentaje
+		    <br>
+		    salario_neto = salario_bruto - descuento
+		    <br>
+		#Mostrar resultado
+		<br>
+		print(f"Empleado: {nombre}")
+		<br>
+		print(f"Horas normales: {horas_normales} horas")
+		<br>
+		print(f"Horas extra: {horas_extra} horas")
+		<br>
+		print(f"Pago hora normal: ${valor_hora:,.0f}".replace(",","."))
+		<br>
+		print(f"Pago hora extra: ${valor_hora * 1.25:,.0f}".replace(",","."))
+		<br>
+		print(f"Salario bruto: ${salario_bruto:,.0f}".replace(",","."))
+		<br>
+		print(f"Descuento: {descuento_porcentaje:.0%}")
+		<br>
+		print(f"Salario neto: ${salario_neto:,.0f}".replace(",","."))
+	</p>
+</body>
+</html>

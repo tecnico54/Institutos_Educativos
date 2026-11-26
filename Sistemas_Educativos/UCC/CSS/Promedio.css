@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #D6FFFA;
+}
+.Menu{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.Materia{
+    margin: 40px;
+}
+.Materia__Titulo{
+    text-align: center;
+}
+.Materia__Formulario-TextBox{
+    margin: 20px 0;
+    background: #fff;
+    outline: auto #48e;
+}
+#aceptar{
+    display: inline-block
+}
+.Materia__Formulario-Boton-Cancelar{
+    background: #f00;
+    color: #fff;
+    cursor: pointer;
+}
+.Materia__Formulario-Boton-Regresar{
+    display: none;
+    background: #c6ec06;
+    color: #000;
+    cursor: pointer;
+}
+.Materia__Formulario-Boton-Eliminar{
+    display: none;
+    background: #f7250058;
+    color: #000;
+    cursor: pointer;
+}
+.Materia__Formulario-Boton-Calcular{
+    display: none;
+    background: #008000;
+    color: #fff;
+    cursor: pointer;
+}
+.Materia__Formulario-Boton-Cancelar:hover, 
+.Materia__Formulario-Boton-Regresar:hover,
+.Materia__Formulario-Boton-Calcular:hover,
+.Materia__Formulario-Boton-Eliminar:hover{
+    font-size: larger;
+}
+.Tabla{
+    margin: 20px auto;
+}
+@media screen and (max-width: 800px){
+    .Materia__Formulario-TextBox{
+        height: 30px;
+    }
+    .Materia__Formulario-Boton-Cancelar, .Materia__Formulario-Boton-Calcular{
+        width: 100px;
+    }
+}

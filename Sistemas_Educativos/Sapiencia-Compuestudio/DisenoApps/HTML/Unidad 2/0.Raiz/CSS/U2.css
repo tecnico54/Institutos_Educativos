@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	margin: 20px 30px;
+	text-decoration: none;
+	color: #48e;
+	font-size: 20px;
+}
+.portada{
+	margin: 75px;
+	padding: 45px;
+	text-align: center;
+	font-size: 35px;
+}
+.portada > p > b{
+	font-size: 50px;
+}
+.titulo{
+	
+	padding: 150px 0 0 45px;
+	font-size: 50px;
+	color: #46e;
+	text-align: center;
+}
+table{
+	border-spacing: 35px;
+}
+.separacion{
+	display: flex;
+	padding: 15px;
+	justify-content: center;
+}
+.division{
+	border: 2px #48e outset;
+}
+.Boton{
+	margin: 5px 0 15px 0;
+	width: 705px;
+	height: 35px;
+	cursor: pointer;
+}

@@ -1,0 +1,14 @@
+*{
+    margin: 0; /*margen*/
+    padding: 0; /*relleno*/
+}
+.Cuerpo{ /*Body*/
+    background: linear-gradient(190deg, #f0e, #48e, #000);/*color de fondo*/
+}
+.Titulo{ /*H1*/
+    color: #f00; /*color*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*fuentes*/
+    text-align: center;/*Alineaciòn*/
+    background-color: #48e;/*color de fondo*/
+    font-size: 1cm;/*Tamaño*/
+}
