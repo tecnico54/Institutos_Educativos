@@ -44,15 +44,15 @@ const materias = {
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 11, nota: 5.0},
                     {nombre: "Desempeño", porcentaje: 11, nota: 5.0},
-                    {nombre: "Producto", porcentaje: 11, nota: 0}
+                    {nombre: "Producto", porcentaje: 11, nota: 5.0}
                 ]
             },
             {
                 unidad: 3,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 11, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 11, nota: 0},
-                    {nombre: "Producto", porcentaje: 12, nota: 0}
+                    {nombre: "Conocimiento", porcentaje: 11, nota: 5.0},
+                    {nombre: "Desempeño", porcentaje: 11, nota: 5.0},
+                    {nombre: "Producto", porcentaje: 12, nota: 5.0}
                 ]
             }
         ]
@@ -109,7 +109,7 @@ const materias = {
                 unidad: 2,
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 17, nota: 5.0},
-                    {nombre: "Desempeño", porcentaje: 17, nota: 0},
+                    {nombre: "Desempeño", porcentaje: 17, nota: 5.0},
                 ]
             },
             {
@@ -144,7 +144,7 @@ const materias = {
                 desempenos: [
                     {nombre: "Conocimiento", porcentaje: 11, nota: 5.0},
                     {nombre: "Desempeño", porcentaje: 11, nota: 5.0},
-                    {nombre: "Producto", porcentaje: 12, nota: 0}
+                    {nombre: "Producto", porcentaje: 12, nota: 5.0}
                 ]
             }
         ]
@@ -192,9 +192,9 @@ const materias = {
             {
                 unidad: 2,
                 desempenos: [
-                    {nombre: "Conocimiento", porcentaje: 17, nota: 0},
-                    {nombre: "Desempeño", porcentaje: 17, nota: 0},
-                    {nombre: "Producto", porcentaje: 17, nota: 0}
+                    {nombre: "Conocimiento", porcentaje: 17, nota: 4.3},
+                    {nombre: "Desempeño", porcentaje: 17, nota: 4.5},
+                    {nombre: "Producto", porcentaje: 17, nota: 4.2}
                 ]
             }
         ]
@@ -212,8 +212,8 @@ const materias = {
             }
         ]
     },
-    SC: {
-        nombre: "Servicio al cliente",
+    E: {
+        nombre: "Etica",
         unidades: [
             {
                 unidad: 1,
@@ -225,8 +225,8 @@ const materias = {
             }
         ]
     },
-    E: {
-        nombre: "Etica",
+    SC: {
+        nombre: "Servicio al cliente",
         unidades: [
             {
                 unidad: 1,

@@ -79,22 +79,22 @@ const semestres = {
             { nombre: "Programación de Sistemas Embebidos y de Tiempo Real", nota: 3.7 },
             { nombre: "Compiladores", nota: 3.4 },
             { nombre: "Inteligencia de Negocios y Minería de Datos", nota: 3.7 },
-            { nombre: "Pruebas Mantenimiento de Software", nota: null },
+            { nombre: "Pruebas de Implementación y Mantenimiento de Software", nota: 3.0 },
             { nombre: "Programación Orientada a la Web", nota: 4.0 },
             { nombre: "Aspectos Legales y Éticos para Ingeniería", nota: null },
             { nombre: "Construcción del Trabajo de Grado", nota: null },
-            { nombre: "Metodologías de Software Colaborativo", nota: null }
+            { nombre: "Metodologías de Software Colaborativo", nota: 5.0 }
         ]
     },
     8: {
         nombre: "Octavo semestre",
         materias: [
             { nombre: "Optativa", nota: null },
-            { nombre: "Gestión de Proyectos de Software", nota: null },
+            { nombre: "Gestión de Proyectos de Software", nota: 3.7 },
             { nombre: "Programación Orientada a Entornos Multimediales", nota: null },
             { nombre: "Ingeniería Web", nota: 4.0 },
             { nombre: "Aplicación Práctica del Trabajo de Grado", nota: null },
-            { nombre: "Sistemas de Comunicaciones y Seguridad Informática", nota: null },
+            { nombre: "Sistemas de Comunicaciones y Seguridad Informática", nota: 3.6 },
             { nombre: "Sistemas de Inteligencia Artificial", nota: null },
             { nombre: "Aspectos Generales del Medio Ambiente", nota: null }
         ]
