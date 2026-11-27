@@ -16,17 +16,5 @@ const materias = [
         dia: "Martes",
         hora: "10:15 - 12:00",
         salon: "208"
-    },
-    {
-        nombre: "Servicio al cliente",
-        dia: "Viernes",
-        hora: "8:00 - 9:45",
-        salon: "101"
-    },
-    {
-        nombre: "Servicio al cliente",
-        dia: "Viernes",
-        hora: "10:15 - 12:00",
-        salon: "101"
     }
 ];
